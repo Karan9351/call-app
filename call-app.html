@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stack Notes App</title>
+  <link rel="stylesheet" href="call.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="note-container">
+
+    <!-- Left Icons -->
+    <div class="left-icons">
+      <button id="add-note"><i class="ri-add-line"></i></button>
+      <button id="upBtn"><i class="ri-arrow-up-line"></i></button>
+      <button id="downBtn"><i class="ri-arrow-down-line"></i></button>
+    </div>
+
+    <!-- Stack -->
+    <div class="stack"></div>
+
+    <!-- Right Colors -->
+    <div class="right-colors">
+      <div class="dot black"></div>
+      <div class="dot purple"></div>
+      <div class="dot orange"></div>
+      <div class="dot teal"></div>
+    </div>
+
+  </div>
+
+  <!-- Form Popup -->
+  <div class="form-container">
+    <form>
+      <h2>Add New Note</h2>
+
+      <label>Image URL</label>
+      <input type="text" placeholder="https://example.com/photo.jpg" />
+
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter full name" />
+
+      <label>Home Town</label>
+      <input type="text" placeholder="Enter home town" />
+
+      <label>Purpose</label>
+      <input type="text" placeholder="e.g., Quick appointment note" />
+
+      <label>Select Category</label>
+      <div>
+        <input type="radio" name="category" value="General" /> General  
+        <input type="radio" name="category" value="Office" /> Office  
+        <input type="radio" name="category" value="Personal" /> Personal  
+      </div>
+
+      <button class="submit-btn">Save Note</button>
+      <button type="button" class="closeForm">Close</button>
+    </form>
+  </div>
+
+  <script src="call.js"></script>
+</body>
+</html>
